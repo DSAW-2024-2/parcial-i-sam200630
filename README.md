@@ -54,13 +54,10 @@ El componente debe verse correctamente en los siguientes viewports:
 **Nota:** Si la página no está desplegada, el parcial no será calificado, por eso se agrega ese ítem a la rúbrica de evaluación
 
 ## Recursos adicionales
-
-
-
-
-link: https://dsaw-2024-2.github.io/parcial-i-sam200630/
-
 - [Guía de HTML](https://www.w3schools.com/html/)
 - [Guía de CSS](https://www.w3schools.com/css/)
 - [Guía de JavaScript](https://www.w3schools.com/js/)
 - [Guía de diseño responsive](https://www.w3schools.com/html/html_responsive.asp)
+
+
+link: https://dsaw-2024-2.github.io/parcial-i-sam200630/
