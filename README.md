@@ -55,6 +55,11 @@ El componente debe verse correctamente en los siguientes viewports:
 
 ## Recursos adicionales
 
+
+
+
+link: https://dsaw-2024-2.github.io/parcial-i-sam200630/
+
 - [Guía de HTML](https://www.w3schools.com/html/)
 - [Guía de CSS](https://www.w3schools.com/css/)
 - [Guía de JavaScript](https://www.w3schools.com/js/)
