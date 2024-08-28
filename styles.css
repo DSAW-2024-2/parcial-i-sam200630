@@ -40,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .card-title {
@@ -71,18 +72,26 @@ body {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  margin-right: 5px;
+}
+
+.author-info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .author-name {
   font-weight: 700;
   color: var(--very-dark-grayish-blue);
+  margin: 0;
 }
 
 .date {
   font-weight: 500;
   color: var(--grayish-blue);
   font-size: 12px;
+  margin: 0;
 }
 
 .share-button {
@@ -104,43 +113,47 @@ body {
   height: 24px;
 }
 
-.tooltip {
-  visibility: hidden;
-  position: absolute;
-  top: -30px;
-  right: 0;
-  background-color: var(--very-dark-grayish-blue);
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-.share-button:hover .tooltip {
-  visibility: visible;
-}
-
 .share-options {
-  display: none;
+  display: none; /* Oculto por defecto */
   position: absolute;
+  bottom: 50px; /* Ajuste para que aparezca justo encima del botón */
+  right: 10px;
   background-color: var(--very-dark-grayish-blue);
   color: white;
   padding: 10px;
   border-radius: 10px;
-  top: 100%;
-  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre los elementos */
+  width: auto; /* Ajusta el ancho automáticamente según el contenido */
+  min-width: 200px; /* Ancho mínimo para garantizar que todos los elementos sean visibles */
+  box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
 }
 
-.social-icon {
-  margin: 0 5px;
-  text-decoration: none;
-  color: white;
+/* Nueva clase .hidden para ocultar elementos */
+.hidden {
+  display: none;
+}
+
+.share-options p {
+  margin: 0;
   font-weight: 700;
+  font-size: 14px; /* Ajusta el tamaño del texto si es necesario */
 }
 
-.attribution {
-  font-size: 12px;
-  text-align: center;
-  margin-top: 20px;
+.share-images {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre las imágenes */
 }
 
+.share-image {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.share-link {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
